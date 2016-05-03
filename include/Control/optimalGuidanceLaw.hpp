@@ -12,8 +12,9 @@ namespace control
 
 //! Compute control authority for Optimal Guidance Law (OGL).
 /*!
- * Computes the control authority based on the OGL (REF). The OGL is the optimal control authority
- * for the case of constant gravity. It is given by the following equation:
+ * Computes the control authority based on the OGL (Ebrahimi et al., 2008; Furfaro et al., 2011;
+ * Guo et al., 2012; Guo et al., 2013). The OGL is the optimal control authority for the case
+ * of constant gravity. The control authority is given by the following equation:
  *
  * \f[
  *      u(t) = \frac{k_{r}}{t_{\text{go}}^{2}} \vec{\text{ZEM}}(t)
@@ -62,3 +63,19 @@ Vector3 computeOptimalGuidanceLaw( const Vector3& zeroEffortMiss,
 } // namespace control
 
 #endif // CONTROL_OPTIMAL_GUIDANCE_LAW_HPP
+
+/*
+ * References
+ * Ebrahimi, B., Bahrami, M., Roshanian, J. (2008) Optimal sliding-mode guidance with terminal
+ *  velocity constraint for fixed-interval propulsive maneuvers, Acta Astronautica, pg. 556–562,
+ *  vol. 62, doi: 10.1016/j.actaastro.2008.02.002.
+ * Furfaro, R., Gaudet, B., Wibben, D.R. Simo, J. (2011) Development of Non-Linear Guidance
+ *  Algorithms for Asteroids Close-Proximity Operations, AIAA Guidance, Navigation, and Control
+ *  (GNC) Conference 2013, Boston, MA, doi: 10.2514/6.2013-4711.
+ * Guo, Y., Hawkins, M., Wie, B. (2012) Optimal feedback guidance algorithms for planetary landing
+ *  and asteroid intercept, Advances in the Astronautical Sciences, pg. 2913-2931, vol. 142.
+ * Guo, Y., Hawkins, M., Wie, B. (2013) Applications of Generalized
+ *  Zero-Effort-Miss/Zero-Effort-Velocity Feedback Guidance Algorithm, Journal of Guidance, Control,
+ *  and Dynamics, pg. 810-820, vol. 36, doi: 10.2514/1.58099.
+ * Furfaro
+ */
