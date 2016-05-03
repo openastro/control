@@ -5,4 +5,5 @@
 # Set project test source files.
 set(TEST_SRC
   "${TEST_SRC_PATH}/testControl.cpp"
+  "${TEST_SRC_PATH}/testOptimalGuidanceLaw.cpp"
 )
