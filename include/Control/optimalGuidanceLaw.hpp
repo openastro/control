@@ -45,19 +45,19 @@ Vector3 computeOptimalGuidanceLaw( const Vector3& zeroEffortMiss,
                                    const Real zeroEffortMissGain = 6.0,
                                    const Real zeroEffortVelocityGain = -2.0 )
 {
-    Vector3 control = zeroEffortMiss;
+    Vector3 controlEffort = zeroEffortMiss;
 
     const Real zeroEffortMissPremultiplier     = zeroEffortVelocityGain / ( timeToGo * timeToGo );
     const Real zeroEffortVelocityPremultiplier = zeroEffortVelocityGain / timeToGo;
 
-    control[ 0 ] = zeroEffortMissPremultiplier * zeroEffortMiss[ 0 ]
-                   + zeroEffortVelocityPremultiplier * zeroEffortVelocity[ 0 ];
-    control[ 1 ] = zeroEffortMissPremultiplier * zeroEffortMiss[ 1 ]
-                   + zeroEffortVelocityPremultiplier * zeroEffortVelocity[ 1 ];
-    control[ 2 ] = zeroEffortMissPremultiplier * zeroEffortMiss[ 2 ]
-                   + zeroEffortVelocityPremultiplier * zeroEffortVelocity[ 2 ];
+    controlEffort[ 0 ] = zeroEffortMissPremultiplier * zeroEffortMiss[ 0 ]
+                        + zeroEffortVelocityPremultiplier * zeroEffortVelocity[ 0 ];
+    controlEffort[ 1 ] = zeroEffortMissPremultiplier * zeroEffortMiss[ 1 ]
+                        + zeroEffortVelocityPremultiplier * zeroEffortVelocity[ 1 ];
+    controlEffort[ 2 ] = zeroEffortMissPremultiplier * zeroEffortMiss[ 2 ]
+                        + zeroEffortVelocityPremultiplier * zeroEffortVelocity[ 2 ];
 
-    return control;
+    return controlEffort;
 }
 
 } // namespace control

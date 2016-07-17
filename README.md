@@ -1,9 +1,9 @@
-Control
+control
 ===
 
 \cond [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) \endcond
 
-Control is a C++ (template) library that provides a suite of control algorithms. The algorithms are implemented in a generic fashion.. A CMake module is available to make it easy to include Control in other CMake-based projects: [FindControl.cmake](https://github.com/openastro/cmake-modules/Modules/FindControl.cmake).
+Control is a C++ (template) library that provides a suite of control algorithms. The algorithms are implemented in a generic fashion. A CMake module is available to make it easy to include Control in other CMake-based projects: [FindControl.cmake](https://github.com/openastro/cmake-modules/Modules/FindControl.cmake).
 
 Features
 ------
