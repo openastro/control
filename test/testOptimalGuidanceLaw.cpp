@@ -11,7 +11,7 @@
 
 #include <catch.hpp>
 
-#include "Control/optimalGuidanceLaw.hpp"
+#include "control/optimalGuidanceLaw.hpp"
 
 namespace control
 {

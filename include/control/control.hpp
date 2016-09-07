@@ -7,4 +7,6 @@
 #ifndef CONTROL_HPP
 #define CONTROL_HPP
 
+#include "control/optimalGuidanceLaw.hpp"
+
 #endif // CONTROL_HPP

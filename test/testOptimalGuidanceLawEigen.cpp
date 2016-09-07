@@ -8,7 +8,7 @@
 
 #include <Eigen/Core>
 
-#include "Control/optimalGuidanceLaw.hpp"
+#include "control/optimalGuidanceLaw.hpp"
 
 namespace control
 {
