@@ -39,9 +39,9 @@ TEST_CASE( "Test Optimal Guidance Law (OGL)", "[ogl]")
         zeroEffortVelocity[ 2 ] = 3.119;
 
         Vector expectedControl( 3 );
-        expectedControl[ 0 ] = 0.468979814498356;
-        expectedControl[ 1 ] = -0.108333152037747;
-        expectedControl[ 2 ] = -0.490575693665001;
+        expectedControl[ 0 ] = -0.611797225534058;
+        expectedControl[ 1 ] = 0.396587823003621;
+        expectedControl[ 2 ] = -0.521881100532641;
 
         Vector computedControl = computeOptimalGuidanceLaw( zeroEffortMiss,
                                                             zeroEffortVelocity,
