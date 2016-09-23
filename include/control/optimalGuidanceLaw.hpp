@@ -47,7 +47,7 @@ Vector3 computeOptimalGuidanceLaw( const Vector3& zeroEffortMiss,
 {
     Vector3 controlEffort = zeroEffortMiss;
 
-    const Real zeroEffortMissPremultiplier     = zeroEffortVelocityGain / ( timeToGo * timeToGo );
+    const Real zeroEffortMissPremultiplier     = zeroEffortMissGain / ( timeToGo * timeToGo );
     const Real zeroEffortVelocityPremultiplier = zeroEffortVelocityGain / timeToGo;
 
     controlEffort[ 0 ] = zeroEffortMissPremultiplier * zeroEffortMiss[ 0 ]
